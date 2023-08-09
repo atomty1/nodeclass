@@ -21,7 +21,7 @@ app.get("/", (req, res)=>{
 app.get("/about", (req, res)=>{
     res.render("about", {name: req.session.myName});
 }); 
-app.listen(8000, ()=>{
+app.listen(port, ()=>{
     console.log("I am anything running on port 8000"); 
  })
 
