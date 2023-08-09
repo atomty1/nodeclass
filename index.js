@@ -9,7 +9,7 @@ app.use(express.static("uploads"));
 app.use(express.static("static"));
 app.use(session({secret: "taye"}));
 
-
+const port = process.env.PORT || 8000;
 let name = "Taye Abidakun";
 let dept= "software";
 let names = ["Tosin", "Ola", "Taye", "Quozeem"];
